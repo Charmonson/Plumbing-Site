@@ -2,191 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Optimized for multiple device sizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
 ​
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css" />
-​
-    <title>Services</title>
+    
+    <title>Harmonson Plumbing</title>
 </head>
 ​
 <body>
-​
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler ml-auto" type="button"
-        data-toggle="collapse" data-target="#hpNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="hpNavbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="Index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                </ul>
-            </div>
-            <div class="col text-center">
-                <a role="button" class="btn btn-link" href="tel:+12106818570" id="callButton" ><i class="fa fa-phone"></i> Call 210-681-8570</a>
-            </div>
-        </div>            
-    </nav>
-<img src="Images/pipes.jpg" class="img-fluid"/>
-</header>
-​
-    <!-- make a MODAL for the call to action w/ coupon -->
-    
-    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
-        <div class="container">
-​
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#harmonsonNavbar">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler ml-auto" type="button"
+            data-toggle="collapse" data-target="#hpNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-​
-            <div class="collapse navbar-collapse" id="#harmonsonNavbar">
-                <ul class="navbar-nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home </a>
-                    </li>
-                        <a class="nav-link" href="#">About Us</a>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="hpNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
-                </ul>
-            </div>
-        </div>    
-    </nav>
-​
-    <div>
-        <div class="container">
-            <div class="row row-content">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
                 <div class="col text-center">
-                    <h2>SERVICES</h2>
+                    <a role="button" class="btn btn-link" href="tel:+12106818570" id="callButton" ><i class="fa fa-phone"></i> Call 210-681-8570</a>
                 </div>
-            </div>
-        </div>
-​
-​
+            </div>            
+        </nav>
+
+    </header>
+
+    <!-- make a MODAL for the call to action -->
+    <div id="services">
         <div class="container">
-            <div class="row row-content">
-​
-                <!-- services CARD groups, 4square, idk how to do this-->
-                <div class="col-group">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/contact+us.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Serivces</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#" class="btn btn-lg btn-secondary">Button</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/Faucet-1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Serivces</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#" class="btn btn-lg btn-secondary">Button</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/MEME_socialdist.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Serivces</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#" class="btn btn-lg btn-secondary">Button</a>
-                        </div>
-                    </div>
-​
-                    <!-- vertical CARDs/ side panel??, how do I do this? see wireframe -->
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">5 Star Review</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">star star star star star</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Coupon</h5>
-                              <p class="card-text">Insert an image of a coupon this also needs to be a button.</p>
-                              <a href="#" class="card-link">BUTTON</a>
-                            </div>
-                        </div>
-                    </div>
-​
+            <div class="row row-content align-items-center"> 
+                <div class="col-sm-4 col-md-4">
+                    <h3 id="service"> We are honored to provide you with a 
+                        personalized solution that will fit your needs and budget. 
+                    </h3>
+                    <h3 id="service">Give us a call if you want to update with new 
+                        fixtures, perform maintenance to avoid 
+                        future problems or in need of a detailed inspection that 
+                        will find the root problem. 
+                    </h3>                          
                 </div>
+    
             </div>
         </div>
     </div>
-​
 
-<div class="footer-dark">
-    <footer>
-        <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-xs-1 left-block">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Repairs</a></li>
-                        <li><a href="#">Installation</a></li>
-                        <li><a href="#">Investigation</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-1 center-block">
-                    <h3>More</h3>
-                    <ul>
-                        <li><a href="index.html">Back to Top</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-1 right-block">
-                    <h3>Harmonson Plumbing</h3>
-                    <p>Accountability to Quality</p>
-                    <a id="email" role="button" class="btn btn-link " 
-                    href="mailito:campsites@nucamp.co"><i class="fa fa-envelope-o">
-                    </i> plumb7777@hotmail.com</a>
+    <div class="container">
+
+        <div class="row row-content align-items-center"> 
+            <div class="col-sm-4 col-md-5">
+                <h2>Repairs</h2>
+                <h3 class="d-none d-sm-block">Faucets, Showers, Sink Lines. Slab Leaks, Re-piping, 
+                Sewer Line Replacement, Water Coolers, Drain Cleaning.</h3>
+                <h2>Installation</h2>
+                <h3 class="d-none d-sm-block">Pressure Reducing Valves, Water Heaters, All Plumbing Fixtures, 
+                Back Flow Valves.</h3>
+              
+            </div>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="Images/bathtub.jpg"
+                    alt="bathtub"/>
                 </div>
             </div>
         </div>
-            <div class= "container">
-                <div class="row d-flex ">
-                    <div class="col item social col-xs-1 center-block">
-                        <a class="btn btn-social-icon btn-facebook" 
-                        href="https://www.facebook.com/harmonsonplumbing"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" 
-                        href="https://www.linkedin.com/in/david-harmonson-104a3166"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-google" 
-                        href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
-                        <p class="copyright">Copyright 2021 © All Rights Reserved </p>
+        <div class="row row-content">       
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="Images/Coupon3.JPG"
+                    alt="coupon"/>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-5">
+                <div class="col text-center">
+                    <h2 id="Coupon3">Don't Forget your Coupon</h2>
+                    <a id="callButton2" role="button" class="btn btn-link" href="tel:+12065551234"></i> Get Coupon</a></button>
+                    <div class="row-content ">
+                        <h3>We Accept</h3>
+                        <img class="img-responsive center-block" src="Images/footer-payments.png">
                     </div>
                 </div>
             </div>
-    </footer>
-</div>
-​
+            
+        </div>
+        
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xs-1 left-block">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Repairs</a></li>
+                            <li><a href="#">Installation</a></li>
+                            <li><a href="#">Investigation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-1 center-block">
+                        <h3>More</h3>
+                        <ul>
+                            <li><a href="index.html">Back to Top</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-1 right-block">
+                        <h3>Harmonson Plumbing</h3>
+                        <p>Accountability to Quality</p>
+                        <a id="email" role="button" class="btn btn-link " 
+                        href="mailito:campsites@nucamp.co"><i class="fa fa-envelope-o">
+                        </i> plumb7777@hotmail.com</a>
+                    </div>
+                </div>
+            </div>
+                <div class= "container">
+                    <div class="row d-flex ">
+                        <div class="col item social col-xs-1 center-block">
+                            <a class="btn btn-social-icon btn-facebook" 
+                            href="https://www.facebook.com/harmonsonplumbing"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" 
+                            href="https://www.linkedin.com/in/david-harmonson-104a3166"><i class="fa fa-linkedin"></i></a>
+                            <a class="btn btn-social-icon btn-google" 
+                            href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
+                            <p class="copyright">Copyright 2021 © All Rights Reserved </p>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 ​
-​
+</html>
