@@ -8,18 +8,28 @@ body {
   h1 {text-align: center;}
 
   h2 {
-    color: #de6318
-    
+    color: #de6318  
   }
 
-  .navbar{
-    font-size: 20px;
+  .carousel .carousel-indicators li {
+    background-color:#de6318 ;
   }
-  .row-content {
-    padding: 50px 0; 
-    border-bottom: 1px ridge;
-    min-height: 200px;
+  .carousel .carousel-indicators li.active {
+    background-color: #8ca995;
   }
+
+  .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #de6318;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:#de6318;
+}
 
  #callButton {
     background-color: #de6318;
@@ -51,7 +61,116 @@ body {
     position: relative;
     
 }
-  #coupon {
+
+.navbar{
+  font-size: 20px;
+}
+.row-content {
+  padding: 30px 0; 
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.footer-dark {
+  padding:30px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+  font-size:16px;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:16px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  margin-bottom:0;
+  font-size: 16 px;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+  font-size:16px;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+.carousel-item {
+  text-align: center;
+  height: 470px;
+
+}
+
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:16px;
+  margin-bottom:0;
+}
+
+
+#coupon {
     background-image: url('../Images/modern-home.jpg');
     background-size: cover;
     background-position: center;
@@ -74,110 +193,68 @@ body {
 
  }
 
+ #pipes {
+  max-width: 100%;  
+  max-height: 10%
+}
+#Coupon3{
+  font-size: 40px;
+  color:#8ca995;
+}
+
   #fixit{
     font-size: 60px;
     color:#8ca995;
   }
-  .footer-dark {
-    padding:30px 0;
-    color:#f0f9ff;
-    background-color:#282d32;
-    font-size:16px;
-  }
-  
-  .footer-dark h3 {
-    margin-top:0;
-    margin-bottom:16px;
-    font-weight:bold;
-    font-size:16px;
-  }
-  
-  .footer-dark ul {
-    padding:0;
-    list-style:none;
-    line-height:1.6;
-    margin-bottom:0;
-    font-size: 16 px;
-  }
-  
-  .footer-dark ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.6;
-    font-size:16px;
-  }
-  
-  .footer-dark ul a:hover {
-    opacity:0.8;
-  }
-  
-  @media (max-width:767px) {
-    .footer-dark .item:not(.social) {
-      text-align:center;
-      padding-bottom:20px;
-    }
-  }
-  
-  .footer-dark .item.text {
-    margin-bottom:36px;
-  }
-  
-  @media (max-width:767px) {
-    .footer-dark .item.text {
-      margin-bottom:0;
-    }
-  }
-
-  @media (max-width:991px) {
-    .footer-dark .item.social {
-      text-align:center;
-      margin-top:20px;
-    }
-  }
-  
-  .footer-dark .item.text p {
-    opacity:0.6;
-    margin-bottom:0;
-  }
-  
-  .footer-dark .item.social {
-    text-align:center;
-  }
-  
-  
-  .footer-dark .item.social > a {
-    font-size:20px;
-    width:36px;
-    height:36px;
-    line-height:36px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    margin:0 8px;
-    color:#fff;
-    opacity:0.75;
-  }
 
   #email{
     color:#f0f9ff;
-
     font-size:16px;
     
   }
-  
-  .footer-dark .item.social > a:hover {
-    opacity:0.9;
-  }
-  
-  .footer-dark .copyright {
-    text-align:center;
-    padding-top:24px;
-    opacity:0.3;
-    font-size:16px;
-    margin-bottom:0;
-  }
 
- .img {
-  width:100%; height:50%;
- }
+  #review {
+    color: #000000 
+  }
   
+#services {
+  background-image: url('../Images/sink_water.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 100%;
+  min-height: 100%;
+
+  }
+#service{
+  color:#fff
+}  
+#Service2{
+  color:#de6318
+} 
+
+#img {  
+  max-width: 60%;  
+  height: 60%
+  } 
+
+  #img2 {  
+    max-width: 50%;  
+    height: 40%
+    }
+
+
+
+
+
+
+   
+
+
+ 
+
+
+
+
+
+
