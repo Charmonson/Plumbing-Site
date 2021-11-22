@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <!--Optimized for multiple device sizes-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-​
+    ​
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
@@ -13,65 +14,128 @@
 
     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
-    
+
     <title>Harmonson Plumbing</title>
 </head>
 ​
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler ml-auto" type="button"
-            data-toggle="collapse" data-target="#hpNavbar">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#hpNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="hpNavbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12106818570" id="callButton" ><i class="fa fa-phone"></i> Call 210-681-8570</a>
+                    <a role="button" class="btn btn-link" href="tel:+12106818570" id="callButton"><i
+                            class="fa fa-phone"></i> Call 210-681-8570</a>
                 </div>
-            </div>            
+            </div>
         </nav>
-        <img id="coupon" src="Images/Headerlogo.jpg" class="img-fluid"/>
+        <img id="coupon" src="Images/Headerlogo.jpg" class="img-fluid" />
     </header>
 
-    <!-- make a MODAL for the call to action -->
     <div id="coupon">
         <div class="container">
-            <div class="row row-content align-items-center"> 
+            <div class="row row-content align-items-center">
                 <div class="col-sm-4 col-md-5">
                     <div class="media-body">
                         <h1>Accountable to Quality</h1>
-                        <h3>Serving the Alamo City for more than twenty 
-                        years as a family owned business. We are licensed, insured and ready to do the job right, the first time. </h3> 
+                        <h3>Serving the Alamo City for more than twenty
+                            years as a family owned business. We are licensed, insured and ready to do the job right,
+                            the first time. </h3>
                     </div>
                     <div class="col text-center">
-                        <button id="getCoupon" type="button"> Get Coupon!</button>
-                    </div> 
+                        <button id="getCoupon" type="button" data-toggle="modal" data-target="#myModal"> Get
+                            Coupon!</button>
+                    </div>
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <div>
+                                        <img id="coupon" src="Images/Coupon3.JPG" class="img-fluid" />
+                                    </div>
+
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Begin Mailchimp Signup Form -->
+                                    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet"
+                                        type="text/css">
+                                    <style type="text/css">
+                                        #mc_embed_signup {
+                                            background: #fff;
+                                            clear: left;
+                                            font: 28px Helvetica, Arial, sans-serif;
+                                        }
+                                        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	                                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                    </style>
+                                    <div id="mc_embed_signup">
+                                        <form
+                                            action="https://app.us20.list-manage.com/subscribe/post?u=4d509aae2e2c420df6a6a6a3b&amp;id=4a788c2c8a"
+                                            method="post" id="mc-embedded-subscribe-form"
+                                            name="mc-embedded-subscribe-form" class="validate" target="_blank"
+                                            novalidate>
+                                            <div id="mc_embed_signup_scroll">
+                                                <label for="mce-EMAIL">Subscribe</label>
+                                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                                    placeholder="email address" required>
+                                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                    <input type="text" name="b_4d509aae2e2c420df6a6a6a3b_4a788c2c8a"
+                                                        tabindex="-1" value=""></div>
+                                                <div class="optionalParent">
+                                                    <div class="clear foot">
+                                                        <input type="submit" value="Subscribe" name="subscribe"
+                                                            id="mc-embedded-subscribe" class="button">
+                                                        <p class="brandingLogo"><a href="http://eepurl.com/hN6u7H"
+                                                                title="Mailchimp - email marketing made easy and fun"><img
+                                                                    src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--End mc_embed_signup-->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     <div class="col text-center">
                         <h3>Download your coupon and get $20 off your next plumbing service</h3>
                     </div>
-                   
-                </div> 
+
+                </div>
                 <div class="col-sm-4 col-md-5">
                     <div class="media">
-                        <img class="d-flex img-thumbnail rounded float-right d-none d-sm-block" src= "Images/Coupon copy.jpg" 
-                        alt="discount coupon"/> 
-                    </div>   
+                        <img class="d-flex img-thumbnail rounded float-right d-none d-sm-block"
+                            src="Images/Coupon copy.jpg" alt="discount coupon" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,92 +146,93 @@
                 <h2>Our Promise</h2>
                 <h3>Quality work at a fair price!</h3>
                 <h2>Peace of Mind</h2>
-                <h3 class="d-none d-sm-block">A company you can trust to take out the guesswork of 
-                residential and commercial repairs.</h3>
+                <h3 class="d-none d-sm-block">A company you can trust to take out the guesswork of
+                    residential and commercial repairs.</h3>
                 <h2>Licensed and Insured</h2>
-                <h3 class="d-none d-sm-block">RPM19390</h3>                
+                <h3 class="d-none d-sm-block">RPM19390</h3>
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="Images/Faucet 1.jpg"
-                    alt="faucet repair"/>
+                    <img class="d-flex mr-3 img-thumbnail" src="Images/Faucet 1.jpg" alt="faucet repair" />
                 </div>
             </div>
         </div>
-        
 
 
-        <div class="row row-content"> 
-           
+
+        <div class="row row-content">
+
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="Images/orangevan.jpg"
-                    alt="orangevan"/>
+                    <img class="d-flex mr-3 img-thumbnail" src="Images/orangevan.jpg" alt="orangevan" />
                 </div>
             </div>
             <div class="col-sm-4 col-md-5">
                 <div class="col text-center">
-                    <h1 id="fixit">When in doubt, call the orange van!</h1> 
+                    <h1 id="fixit">When in doubt, call the orange van!</h1>
                     <div class="col">
-                        <a id="callButton2" role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 210-681-8570</a></button>
+                        <a id="callButton2" role="button" class="btn btn-link" href="tel:+12065551234"><i
+                                class="fa fa-phone"></i> 210-681-8570</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </div>
-    
+
 </body>
 
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xs-1 left-block">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Repairs</a></li>
-                            <li><a href="#">Installation</a></li>
-                            <li><a href="#">Investigation</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-1 center-block">
-                        <h3>More</h3>
-                        <ul>
-                            <li><a href="index.html">Back to Top</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-1 right-block">
-                        <h3>Harmonson Plumbing</h3>
-                        <p>Accountability to Quality</p>
-                        <a id="email" role="button" class="btn btn-link " 
-                        href="mailito:campsites@nucamp.co"><i class="fa fa-envelope-o">
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-xs-1 left-block">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Installation</a></li>
+                        <li><a href="#">Investigation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-1 center-block">
+                    <h3>More</h3>
+                    <ul>
+                        <li><a href="index.html">Back to Top</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-1 right-block">
+                    <h3>Harmonson Plumbing</h3>
+                    <p>Accountability to Quality</p>
+                    <a id="email" role="button" class="btn btn-link " href="mailito:campsites@nucamp.co"><i
+                            class="fa fa-envelope-o">
                         </i> plumb7777@hotmail.com</a>
-                    </div>
                 </div>
             </div>
-                <div class= "container">
-                    <div class="row d-flex ">
-                        <div class="col item social col-xs-1 center-block">
-                            <a class="btn btn-social-icon btn-facebook" 
-                            href="https://www.facebook.com/harmonsonplumbing"><i class="fa fa-facebook"></i></a>
-                            <a class="btn btn-social-icon btn-twitter" 
-                            href="https://www.linkedin.com/in/david-harmonson-104a3166"><i class="fa fa-linkedin"></i></a>
-                       
-                            <p class="copyright">Copyright 2021 © All Rights Reserved </p>
-                        </div>
-                    </div>
-                </div>
-        </footer>
-    </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex ">
+                <div class="col item social col-xs-1 center-block">
+                    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/harmonsonplumbing"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter"
+                        href="https://www.linkedin.com/in/david-harmonson-104a3166"><i class="fa fa-linkedin"></i></a>
 
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- endbuild -->
+                    <p class="copyright">Copyright 2021 © All Rights Reserved </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- endbuild -->
 
 ​
+
 </html>
